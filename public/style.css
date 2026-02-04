@@ -124,11 +124,11 @@
       font-family: 'Poppins', sans-serif;
     }
 
-    footer {
-      background-color: var(--marrom-terra);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      margin-top: 4rem;
-      font-size: 0.9rem;
-    } 
+footer {
+  background-color: var(--marrom-terra);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
