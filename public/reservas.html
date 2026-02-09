@@ -14,8 +14,8 @@
     <h1>Parque Ambiental</h1>
     <nav>
       <a href="index.html">Início</a>
-      <a href="reservas.html">Reservas</a>
       <a href="atividades.html">Atividades</a>
+      <a href="reservas.html">Reservas</a>
     </nav>
   </header>
 
@@ -66,6 +66,15 @@
   <footer>
     <p>© 2026 Parque Ambiental • Sua visita ajuda a preservar a natureza</p>
   </footer>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const atividade = params.get('atividade');
+
+  if (atividade) {
+    const select = document.getElementById('atividade');
+    select.value = atividade;
+  }
+</script>
 
 </body>
 </html>
