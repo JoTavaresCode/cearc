@@ -183,3 +183,104 @@ footer {
     font-size: 2rem;
   }
 }
+/* NOTÍCIAS COM FOTO */
+.noticias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card-noticia {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 260px;
+}
+
+.card-noticia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-noticia .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: #f6f4ef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-noticia:hover .overlay {
+  opacity: 1;
+}
+
+.card-noticia h4 {
+  margin-bottom: 10px;
+  color: #d4af37;
+}
+.intro {
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.reserva-form {
+  background-color: white;
+  max-width: 500px;
+  padding: 3rem;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.4rem;
+}
+
+.form-group label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: var(--marrom-terra);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-family: 'Lora', serif;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--verde-musgo);
+  box-shadow: 0 0 0 2px rgba(111, 143, 114, 0.2);
+}
+
+.btn-primary {
+  margin-top: 1rem;
+  background-color: var(--verde-musgo);
+  color: white;
+  border: none;
+  padding: 0.9rem 2.5rem;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
