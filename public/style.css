@@ -284,3 +284,8 @@ footer {
 .btn-primary:hover {
   opacity: 0.9;
 }
+@media (max-width: 600px) {
+  .reserva-form {
+    padding: 2rem 1.5rem;
+  }
+}
